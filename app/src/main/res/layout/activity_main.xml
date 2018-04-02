@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="쏘카 지뢰찾기 개발시험"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정 진 용"
+        android:textStyle="bold"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mine_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="GridLayoutManager"
+        app:spanCount="10" />
+
+    <EditText
+        android:id="@+id/mine_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="지뢰개수 - ex) 10"/>
+    <Button
+        android:id="@+id/restart_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다시시작" />
+
+    <Button
+        android:id="@+id/answer_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과보기" />
+</LinearLayout>
